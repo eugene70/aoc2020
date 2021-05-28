@@ -56,7 +56,7 @@ object Day08:
             return r
       (false, 0)
 
-  @main def day08: Unit =
+  @main def runDay08: Unit =
     val testData = time("testReady", () => ready(testInput))
     time("tesPart1", () => part1(testData)) // should be 5
     time("testPart2", () => part2(testData)) // should be 8

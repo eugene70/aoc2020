@@ -21,7 +21,7 @@ object Day11:
 
   type Neighbors = IndexedSeq[SeatStatus]
 
-  @main def day11: Unit =
+  @main def runDay11: Unit =
     val testData = time("testReady", () => ready(testInput))
     time("tesPart1", () => part1(testData)) // should be 37
     time("testPart2", () => part2(testData)) // should be 26

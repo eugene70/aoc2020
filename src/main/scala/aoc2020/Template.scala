@@ -3,7 +3,7 @@ package aoc2020
 object Template:
   type InputType = List[String]
 
-  @main def day: Unit =
+  @main def runTemplate: Unit =
     val testData = time("testReady", () => ready(testInput))
     time("tesPart1", () => part1(testData))
     time("testPart2", () => part2(testData))

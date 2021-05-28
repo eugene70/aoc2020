@@ -3,7 +3,7 @@ package aoc2020
 object Day05:
   type InputType = List[Int]
 
-  @main def day05: Unit =
+  @main def runDay05: Unit =
     val testData = time("testReady", () => ready(testInput))
     time("tesPart1", () => part1(testData)) // should be 820
     time("testPart2", () => part2(testData)) // should be 0 = not found
