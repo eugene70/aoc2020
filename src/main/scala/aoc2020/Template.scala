@@ -5,28 +5,28 @@ object Template:
 
   @main def runTemplate: Unit =
     val testData = time("testReady", () => ready(testInput))
-    time("tesPart1", () => part1(testData))
+    time("testPart1", () => part1(testData))
     time("testPart2", () => part2(testData))
 
     val data = time("ready", () => ready(input))
     time("part1", () => part1(data))
     time("part2", () => part2(data))
 
-  private def ready(input: String): InputType =
+  def ready(input: String): InputType =
     input
       .linesIterator
       .toList
 
-  private def part1(data: InputType): Long =
+  def part1(data: InputType): Long =
     0
 
-  private def part2(data: InputType): Long =
+  def part2(data: InputType): Long =
     0
 
-  private val testInput =
+  val testInput =
     """
       |""".stripMargin
 
-  private val input =
+  val input =
     """
       |""".stripMargin
