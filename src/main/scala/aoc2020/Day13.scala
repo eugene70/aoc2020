@@ -1,7 +1,5 @@
 package aoc2020
 
-import org.junit.{Assert, Test}
-
 object Day13:
   type InputType = (Int, List[String])
 
